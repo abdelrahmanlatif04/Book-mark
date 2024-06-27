@@ -79,7 +79,6 @@ using less SVGs // TODO: nav bar
           {{ item.navigator }}
         </li>
       </ul>
-      <img src="./assets/illustration-features-tab-1.svg" alt="">
       <ul>
         <li
           class="flex justify-between gap-y-4 flex-col items-center sm:items-center sm:flex-row"
@@ -88,7 +87,7 @@ using less SVGs // TODO: nav bar
           :key="item"
         >
           <img
-            :src="`./assets/illustration-features-tab-${i + 1}.svg`"
+            src="`./assets/illustration-features-tab-1.svg`"
             class="w-[90%] sm:w-[48%]"
           />
           <div
