@@ -15,7 +15,6 @@
     >
       {{ item.answer }}
     </div>
-    <div class="c"></div>
   </div>
 </template>
 
