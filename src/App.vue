@@ -34,12 +34,16 @@ using less SVGs // TODO: nav bar
     </nav>
     <section id="hero" class="flex flex-col-reverse md:flex-row items-center">
       <div class="flex flex-col justify-center gap-10 md:gap-4">
-        <div class="title md:text-3xl xl:text-5xl text-4xl">A Simple Bookmark Manager</div>
+        <div class="title md:text-3xl xl:text-5xl text-4xl">
+          A Simple Bookmark Manager
+        </div>
         <div class="text-grayish-blue text-xl px-4 sm:px-6 md:px-2">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </div>
-        <div class="flex justify-center md:justify-start lg:justify-center gap-5 md:w-full mx-auto">
+        <div
+          class="flex justify-center md:justify-start lg:justify-center gap-5 md:w-full mx-auto"
+        >
           <button
             class="bg-soft-blue shadow-sm smooth border-2 border-soft-blue text-white rounded-md py-2 px-3 sm:px-6 hover:bg-transparent hover:text-soft-blue hover:shadow-soft-blue"
           >
@@ -79,7 +83,6 @@ using less SVGs // TODO: nav bar
           {{ item.navigator }}
         </li>
       </ul>
-      <img src="./assets/illustration-features-tab-1.svg" alt="">
       <ul>
         <li
           class="flex justify-between gap-y-4 flex-col items-center sm:items-center sm:flex-row"
@@ -88,7 +91,7 @@ using less SVGs // TODO: nav bar
           :key="item"
         >
           <img
-            src="`./assets/illustration-features-tab-1.svg`"
+            :src="`./assets/illustration-features-tab-${i + 1}.svg`"
             class="w-[90%] sm:w-[48%]"
           />
           <div
@@ -161,7 +164,7 @@ using less SVGs // TODO: nav bar
           Stay up-to-date with what we’re doing
         </div>
         <form
-          class="flex justify-center items-center sm:items-stretch  gap-4 flex-col sm:flex-row sm:w-[70%] mx-auto"
+          class="flex justify-center items-center sm:items-stretch gap-4 flex-col sm:flex-row sm:w-[70%] mx-auto"
         >
           <input
             class="text-start text-black focus:outline-none w-full max-w-96 sm:w-4/5 pl-3 py-3 sm:py-0 focus:border-black focus:border rounded-md"
