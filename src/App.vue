@@ -87,7 +87,7 @@ using less SVGs // TODO: nav bar
           :key="item"
         >
           <img
-            :src="`./src/assets/illustration-features-tab-${i + 1}.svg`"
+            :src="`./assets/illustration-features-tab-${i + 1}.svg`"
             class="w-[90%] sm:w-[48%]"
           />
           <div
