@@ -91,7 +91,7 @@ using less SVGs // TODO: nav bar
           :key="item"
         >
           <img
-            :src="`./assets/illustration-features-tab-${i + 1}.svg`"
+            :src="item.img"
             class="w-[90%] sm:w-[48%]"
           />
           <div
@@ -127,6 +127,7 @@ using less SVGs // TODO: nav bar
           :key="browser"
           :browser="browser.name"
           :version="browser.version"
+          :img="browser.img"
         />
       </div>
 
@@ -216,6 +217,13 @@ using less SVGs // TODO: nav bar
 <script>
 import AddCard from "./components/AddCard.vue";
 import QA from "./components/QA.vue";
+import chromeImg from "./assets/logo-Chrome.svg";
+import firefoxImg from "./assets/logo-Firefox.svg";
+import operaImg from "./assets/logo-Opera.svg";
+import img1 from "./assets/illustration-features-tab-1.svg";
+import img2 from "./assets/illustration-features-tab-2.svg";
+import img3 from "./assets/illustration-features-tab-3.svg";
+
 export default {
   data() {
     return {
@@ -225,12 +233,14 @@ export default {
         tabs: [
           {
             navigator: "Simple Bookmarking",
+            img: img1,
             title: "Bookmark in one click",
             description:
               "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage yourfavourite sites.",
           },
           {
             navigator: "Speedy Searching",
+            img: img2,
             title: "Intelligent search",
             description:
               "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
@@ -238,15 +248,16 @@ export default {
           {
             navigator: "Easy Sharing",
             title: "Share your bookmarks ",
+            img: img3,
             description:
               "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
           },
         ],
       },
       browsers: [
-        { name: "Chrome", version: 62 },
-        { name: "Firefox", version: 55 },
-        { name: "Opera", version: 64 },
+        { img: chromeImg, name: "Chrome", version: 62 },
+        { img: firefoxImg, name: "Firefox", version: 55 },
+        { img: operaImg, name: "Opera", version: 64 },
       ],
       QA: [
         {

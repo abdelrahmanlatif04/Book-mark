@@ -2,7 +2,7 @@
   <div
     class="flex border-t bg-white mx-auto items-center flex-col gap-7 w-[280px]] overflow-hidden text-center pt-10 pb-5 rounded-xl shadow-md transition duration-300 hover:shadow-xl hover:scale-[1.05] cursor-pointer"
   >
-    <img :src="`../src/assets/logo-${browser}.svg`" :alt="`${browser}'s logo`" />
+    <img :src="img" :alt="`${browser}'s logo`" />
     <div>
       <div class="title text-xl">Add to {{ browser }}</div>
       <div class="my-1 text-sm text-grayish-blue">
@@ -23,6 +23,6 @@ export default {
   data() {
     return {};
   },
-  props: ["browser", "version"],
+  props: ["img","browser", "version"],
 };
 </script>
