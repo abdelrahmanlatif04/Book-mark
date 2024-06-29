@@ -100,7 +100,7 @@ using less SVGs // TODO: nav bar
             <div class="title text-2xl md:text-3xl lg:text-4xl">
               {{ item.title }}
             </div>
-            <div class="text-xl">{{ item.description }}</div>
+            <div class="text-xl text-center sm:text-start">{{ item.description }}</div>
             <button
               class="bg-soft-blue text-white rounded-lg py-2 px-5 hover:bg-transparent self-center sm:self-start hover:text-soft-blue hover:shadow-none border-soft-blue border-2"
             >
