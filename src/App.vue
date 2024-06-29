@@ -42,7 +42,7 @@ using less SVGs // TODO: nav bar
           a new browser tab and see your sites load instantly. Try it for free.
         </div>
         <div
-          class="flex justify-center md:justify-start lg:justify-center gap-5 md:w-full mx-auto"
+          class="flex justify-center md:justify-start 2xl:justify-center gap-5 md:w-full mx-auto"
         >
           <button
             class="bg-soft-blue shadow-sm smooth border-2 border-soft-blue text-white rounded-md py-2 px-3 sm:px-6 hover:bg-transparent hover:text-soft-blue hover:shadow-soft-blue"
