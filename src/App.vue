@@ -4,7 +4,7 @@ using less SVGs // TODO: nav bar
 <template>
   <div class="flex flex-col pt-10 gap-y-12 text-center md:text-start">
     <nav class="flex justify-between">
-      <a href="#hero"><img src="./assets/logo-bookmark.svg" alt="Logo" /> </a>
+      <a class="flex justify-center items-center" href="#hero"><img src="./assets/logo-bookmark.svg" alt="Logo" /> </a>
       <img
         class="object-contain block sm:hidden"
         @click="isMenuOpen = !isMenuOpen"
@@ -12,7 +12,7 @@ using less SVGs // TODO: nav bar
         alt=""
       />
       <ul
-        class="items-center px-5 fixed left-0 top-0 flex-col h-[100vh] w-full bg-[#000000dd] text-white gap-y-5 justify-center sm:flex sm:relative sm:flex-row sm:w-1/2 sm:h-auto md:justify-evenly"
+        class="items-center px-5 fixed left-0 top-0 flex-col h-[100vh] w-full bg-[#000000dd] text-white sm:bg-white sm:text-black gap-y-5 justify-center sm:justify-end sm:flex sm:relative sm:flex-row md:w-1/2 sm:h-auto sm:gap-3 md:gap-3 md:justify-around"
         :class="isMenuOpen ? 'hidden' : 'flex'"
       >
         <img
